@@ -1,0 +1,236 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  font-family: "Noto Serif SC", serif;
+  font-size: 18px;
+  color: #4c3718;
+  background-color: #d9f2e9;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	display: flex;
+}
+
+.starbucks__logo {
+	display: flex;
+	margin: 18px auto;
+}
+
+.header__background {
+	background-color: #fff;
+	width: 125px;
+	height: 105px;
+}
+
+.link__item:not(:last-child) {
+	margin-right: 72px;
+}
+
+.link__item {
+	font-size: 18px;
+	padding-bottom: 5px;
+	font-family: 'EB Garamond', serif;
+	text-decoration: none;
+	color: #4C3718;
+	background: linear-gradient(currentColor 0 0) bottom /var(--a, 0) 1.2px no-repeat;
+	transition: 0.5s;
+}
+
+.link__item:hover {
+	--a: 100%;
+}
+
+/* 2-я секция */
+.coffee__inner {
+	background-color: #553C2E;
+	display: flex;
+	margin-top: -52px;
+	position: relative;
+}
+
+.coffee__wrap {
+	display: flex;
+	align-items: center;
+}
+
+.coffee__info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+.coffee__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 132px 0;
+}
+
+.coffee__title {
+	font-family: Noto Serif SC;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 148.04%;
+	letter-spacing: 0.005em;
+	text-transform: uppercase;
+	color: #F2F2F2;
+}
+
+.coffee__subtitle {
+	font-family: EB Garamond;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 138.04%;
+	margin-top: 44px;
+	color: #E5E5E5;
+	width: 405px;
+}
+
+.coffee__image:nth-child(1){
+	width: 711px;
+	height: 282px;
+	margin-bottom: 20px;
+}
+
+.coffee__image:nth-child(2) {
+	width: 475px;
+	height: 348px;
+	margin-right: 20px;
+}
+
+.coffee__image:nth-child(3) {
+	width: 216px;
+	height: 348px;
+}
+
+/* 3-я секция */
+.coffee__catalog {
+	padding-top: 123px;
+	padding-bottom: 222px;
+}
+
+.coffee__catalog-title {
+	font-family: Noto Serif SC;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 148.04%;
+	text-transform: uppercase;
+}
+
+.coffee__cards {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 63px;
+	align-items: center;
+}
+
+.coffee__card-item {
+	transition: 0.5s;
+}
+
+.coffee__card-item:hover {
+	-webkit-box-shadow: 7px 7px 15px 2px #d9f2e9;
+	-moz-box-shadow: 7px 7px 15px 2px #d9f2e9;
+	box-shadow: 7px 7px 25px 2px #d9f2e9;
+	transform: scale(1.05);
+}
+
+.coffee__card-item:hover {
+	background: #d9f2e9;
+}
+
+.package-coffee {
+	cursor: pointer;
+	width: 182px;
+}
+
+.coffee__card-title {
+	font-family: Noto Serif SC;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 148.04%;
+	text-transform: uppercase;
+	width: 225px;
+	margin-top: 10px;
+}
+
+.coffee__card-price {
+	display: flex;
+	margin-top: 12px;
+}
+
+.card__price {
+	margin-right: 114px;
+}
+
+.card__btn {
+	cursor: pointer;
+}
+
+.circle__btn {
+	content: " ";
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	border: 1.5px solid #219653;
+	transition: ease-in 0.2s;
+}
+
+.circle__btn:hover {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	border: 1.5px solid #219653;
+	background: #21965438;
+}
+
+.circle__btn:before,
+.circle__btn:after {
+	content: " ";
+	position: absolute;
+	width: 15px;
+	margin: 15px 0px 0px 9px;
+	height: 1px;
+	background: #219653;
+}
+
+.circle__btn:before {
+	--webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.starbucks__footer-logo {
+	width: 50px;
+}
+
+.footer__text {
+	font-size: 18px;
+	font-family: Noto Serif SC;
+}
+
+.footer__link:not(:last-child) {
+	margin-right: 12px;
+}
